@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dist/css/main.min.css">
+    <script src="https://kit.fontawesome.com/7689eee82e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <canvas class="drawing-area"></canvas>
+        <canvas class="drawing-area2"></canvas>
+        <div class="tools-area">
+            <div class="tools-area__boxes">
+                <div class="tools-area__box">
+                    <i class="fa-solid fa-rotate-left"></i>
+                    <a download="myImage.png" href="" onclick="download_img(this);"><i
+                            class="fa-solid fa-floppy-disk"></i></a>
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <div class="tools-area__box">
+                    <i class="fa-solid fa-paintbrush tool active"></i>
+                    <div class="tools-area__box-line tool"></div>
+                    <i class="fa-solid fa-square-full tool"></i>
+                    <i class="fa-solid fa-eraser eraser"></i>
+                </div>
+                <div class="tools-area__box">
+                    <input type="range" min="1" max="101" value="10" step="10" class="tools-area__box-range">
+                </div>
+                <div class="tools-area__box">
+                    <i class="fa-solid fa-circle red"></i>
+                    <i class="fa-solid fa-circle green"></i>
+                    <i class="fa-solid fa-circle blue"></i>
+                    <i class="fa-solid fa-circle yellow"></i>
+                    <!-- <i class="fa-solid fa-palette"></i> -->
+                    <input type="color" class="tools-area__box-color">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="dist/js/main.min.js"></script>
+</body>
+
+</html>
