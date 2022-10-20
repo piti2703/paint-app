@@ -1,4 +1,4 @@
-<h3>PAINT APP</h3>
+#PAINT APP
 
 Application for drawing shapes, lines, etc. It has the function of undoing changes, changing colors, and also saving.
 
